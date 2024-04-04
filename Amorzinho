@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surpresa para a minha namorada</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #f0f0f0;
+}
+.message {
+    font-size: 24px;
+    color: #333;
+}
+</style>
+</head>
+<body>
+<div class="message" id="message"></div>
+<script>
+// Array de mensagens de carinho
+const messages = [
+    "Você é a luz da minha vida!",
+    "Meu amor por você cresce a cada dia!",
+    "Você é a pessoa mais especial do mundo para mim!",
+    "Sua presença torna tudo mais bonito!",
+    "Obrigado por ser quem você é!"
+];
+
+// Função para exibir mensagem aleatória
+function showMessage() {
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    const messageElement = document.getElementById("message");
+    messageElement.textContent = messages[randomIndex];
+}
+
+// Chama a função ao clicar na página
+document.addEventListener("click", showMessage);
+</script>
+</body>
+</html>
